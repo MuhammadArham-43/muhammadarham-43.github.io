@@ -8,9 +8,11 @@ include:
   - _pages
 
 remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "air"   # clean minimal theme
+minimal_mistakes_skin: "dark"   # clean minimal theme
+theme_skin_toggles: true
 markdown: kramdown
 
+author_profile: true
 author:
   name: "Muhammad Arham"
   avatar: "/assets/images/bio-photo.jpg"
