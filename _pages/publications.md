@@ -5,8 +5,6 @@ permalink: /publications/
 author_profile: true
 ---
 
-## Peer-Reviewed Publications
-
 ### **LLM-Informed Discrete Prompt Optimization**  
 *LLM Cognition Workshop @ ICML*  
 **Muhammad Arham**, Zeeshan Memon, Adnan-ul-Hasan, Faisal Shafait  
