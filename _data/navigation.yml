@@ -1,4 +1,6 @@
 main:
+  - title: "Overview"
+    url: /
   - title: "Publications"
     url: /publications/
   - title: "Projects"
