@@ -1,5 +1,5 @@
 projects:
-  - image_path: /assets/images/imagelogo.png
+  - image_path: /assets/images/imaginelogo.png
     title: "ImagineArt"
     excerpt: "AI Art Generator | 10M+ downloads | 800K+ monthly active users "
     url: "https://www.imagine.art/"
