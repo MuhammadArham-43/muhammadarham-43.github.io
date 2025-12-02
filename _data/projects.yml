@@ -1,0 +1,15 @@
+proj:
+  - image_path: /assets/images/imagelogo.png
+    title: "ImagineArt"
+    excerpt: "AI Art Generator | 10M+ downloads | 800K+ monthly active users "
+    url: "https://www.imagine.art/"
+  
+  - image_path: /assets/images/urdu-llama.jpg
+    title: "Urdu-Llama (LARGE Initiative)"
+    excerpt: "LLM for low-resource Urdu language. Recipient of Meta APAC Accelerator Grant (USD 100K)."
+    url: "https://arxiv.org/pdf/2510.09051"
+
+  - image_path: /assets/images/cern.png
+    title: "TICL Optimization at CERN"
+    excerpt: "CUDA and ROCm performance engineering for HL-LHC event reconstruction inside the CMSSW Patatrack framework."
+    url: "https://cds.cern.ch/record/2911079/files/CERNProjectReport___CMSSW.pdf"
