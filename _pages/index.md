@@ -13,4 +13,4 @@ I later transitioned to NLP-focused work at Traversaal.ai, where I designed RAG 
 
 I am currently a Machine Learning Engineer at ServeDen, where I work on a no-code platform for deploying secure, general-purpose LLM agentic workflows.
 
-I was a MITACS research intern in Summer 2024, and a CERN Summer Student in 2024. I have published work at top-tier AI venues including ICML, COLING, AACL. I have been involved in industrial projects that combine applied ML engineering with reproducible research.
+I was a MITACS research intern in Summer 2024, and a CERN Summer Student in 2024. I have published work at top-tier AI venues including ICML, COLING, EMNLP. I have been involved in industrial projects that combine applied ML engineering with reproducible research.
