@@ -1,11 +1,10 @@
----
 layout: archive
 title: "Projects"
 permalink: /projects/
 classes: wide # Use 'wide' class to maximize screen space
 ---
 
-<div class="entries-grid">
+<div class="entries-grid projects-grid">
 
 {% for project in site.data.projects.projects %}
 
@@ -13,8 +12,7 @@ classes: wide # Use 'wide' class to maximize screen space
   
   <div class="archive__item-teaser-small">
     <a href="{{ project.url }}" rel="permalink">
-      <img src="{{ project.image_path | relative_url }}" alt="{{ project.title | escape }}" 
-           style="border-radius: 4px; object-fit: cover; width: 100%; height: 100%;">
+      <img src="{{ project.image_path | relative_url }}" alt="{{ project.title | escape }}">
     </a>
   </div>
 

@@ -1,36 +1,72 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // Imports your chosen theme skin
 @import "minimal-mistakes"; // Imports the core Minimal Mistakes framework
 
-/* --- START: Custom Project Card Styles --- */
+/* --- START: Custom Project Card Styles (Projects page) --- */
 
-/* Ensures the image container is small and fixed */
-.archive__item--2-col .archive__item-teaser {
-    height: 150px; /* Adjust this height as needed for your images */
-    overflow: hidden;
-    margin-bottom: 0.5rem;
+/* Grid layout for projects page */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-/* Ensures the image inside the container covers the space without distortion */
-.archive__item--2-col .archive__item-teaser img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; /* This makes sure the image crops nicely instead of stretching */
+/* Card container */
+.projects-grid .archive__item--2-col {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  transition:
+    transform 0.18s ease-out,
+    box-shadow 0.18s ease-out,
+    border-color 0.18s ease-out;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Style for the whole card/box */
-.archive__item--2-col {
-    border: 1px solid #e7e7e7;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    margin-bottom: 1.5rem; /* Separates the cards visually */
-    transition: box-shadow 0.3s ease;
-    display: flex; /* Ensures image and text stack nicely on mobile */
-    flex-direction: column; 
-    text-decoration: none; /* Removes any default underline from the card link if you made the whole card a link */
+.projects-grid .archive__item--2-col:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.24);
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
-.archive__item--2-col:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Small image teaser */
+.projects-grid .archive__item-teaser-small {
+  height: 120px;
+  overflow: hidden;
+  border-radius: 6px;
 }
 
-/* --- END: Custom Project Card Styles --- */
+.projects-grid .archive__item-teaser-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text spacing and typography */
+.projects-grid .archive__item-body {
+  padding-top: 0.75rem;
+}
+
+.projects-grid .archive__item-title {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.projects-grid .archive__item-title a {
+  text-decoration: none;
+}
+
+.projects-grid .archive__item-title a:hover {
+  text-decoration: underline;
+}
+
+.projects-grid .archive__item-excerpt {
+  font-size: 0.9rem;
+  color: #d0d0d0;
+}
+
+/* --- END: Custom Project Card Styles (Projects page) --- */
