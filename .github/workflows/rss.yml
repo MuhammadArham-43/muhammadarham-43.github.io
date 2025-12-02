@@ -1,28 +1,40 @@
-name: Import RSS Blog Posts
+name: Import Medium RSS Posts
 
 on:
   schedule:
     - cron: "0 0 1 * *"   # every hour
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   rss:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Import RSS
-        uses: gautamkrishnar/blog-post-workflow@master
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          feed_list: "https://medium.com/feed/@arhamm40182"
-          max_post_count: 100
-          commit_message: "Updated blog posts via RSS"
-          
-      - name: Push to GitHub
+          ruby-version: '3.2'
+
+      - name: Install RSS gem (if needed)
+        run: |
+          gem install rss
+
+      - name: Fetch Medium posts into _posts
+        env:
+          MAX_POSTS: "100"
+        run: |
+          ruby scripts/fetch_medium_posts.rb
+
+      - name: Commit and push changes
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add .
-          git commit -m "Update blog posts" || echo "No changes to commit"
+          git add _posts/
+          git diff --cached --quiet || git commit -m "Update Medium posts from RSS"
           git push
