@@ -30,3 +30,10 @@ Karthik Menon, **Muhammad Arham**
 *MRL @ EMNLP*  
 Ali Shafique, Kanwal Mehreen, **Muhammad Arham**  
 [PDF](https://arxiv.org/pdf/2510.09051)
+
+---
+
+### **Improving Multilingual Capabilities with Cultural and Local Knowledge in Large Language Models While Enhancing Native Performance**
+*IJCNLP-AACL 2025*
+Ram Mohan Rao Kadiyala, Siddartha Pullakhandam, Siddhant Gupta, Drishti Sharma, Jebish Purbey, Kanwal Mehreen, **Muhammad Arham**, Hamza Farooq
+[PDF](https://ui.adsabs.harvard.edu/abs/2025arXiv250409753M/abstract)
