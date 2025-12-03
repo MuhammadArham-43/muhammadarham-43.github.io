@@ -33,7 +33,9 @@ Ali Shafique, Kanwal Mehreen, **Muhammad Arham**
 
 ---
 
-### **Improving Multilingual Capabilities with Cultural and Local Knowledge in Large Language Models While Enhancing Native Performance**
-*IJCNLP-AACL 2025*
-Ram Mohan Rao Kadiyala, Siddartha Pullakhandam, Siddhant Gupta, Drishti Sharma, Jebish Purbey, Kanwal Mehreen, **Muhammad Arham**, Hamza Farooq
+### **Improving Multilingual Capabilities with Cultural and Local Knowledge in Large Language Models While Enhancing Native Performance**  
+*IJCNLP-AACL 2025*  
+Ram Mohan Rao Kadiyala, Siddartha Pullakhandam, Siddhant Gupta, Drishti Sharma, Jebish Purbey, Kanwal Mehreen, **Muhammad Arham**, Hamza Farooq  
 [PDF](https://ui.adsabs.harvard.edu/abs/2025arXiv250409753M/abstract)
+
+---
