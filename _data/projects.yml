@@ -11,7 +11,7 @@ projects:
 
   - image_path: /assets/images/imaginelogo.png
     title: "ImagineArt"
-    excerpt: "AI Art Generator developed at Vyro (10M+ downloads, 800K+ MAU)."
+    excerpt: "AI Art Generator. Developed at Vyro (10M+ downloads, 800K+ MAU)."
     url: "https://www.imagine.art/"
   
   - image_path: /assets/images/reshot.jpg
@@ -19,7 +19,7 @@ projects:
     excerpt: "Professional headshot generation with AI. Developed at Vyro (5M+ downloads)."
     url: "https://play.google.com/store/apps/details?id=ai.vyro.retake&hl=en_CA"
   
-  - image_path: /assets/images/phototune.jpg
+  - image_path: /assets/images/phototune.png
     title: "PhotoTune"
     excerpt: "AI Photo Enhancer. Developed at Vyro (10M+ downloads, 4.3 rating across 85K+ reviews)."
     url: "https://play.google.com/store/apps/details?id=com.vyroai.photoenhancer"
