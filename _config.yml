@@ -39,6 +39,9 @@ author:
     - label: "Linktree"
       icon: "fas fa-link"
       url: "https://linktr.ee/muhammad.arham"
+    - label: "Resume"
+      icon: "fas fa-file-pdf"
+      url: "#resume"
 
 plugins:
   - jekyll-seo-tag

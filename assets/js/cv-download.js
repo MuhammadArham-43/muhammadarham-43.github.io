@@ -11,27 +11,39 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  const downloadButton = document.getElementById('downloadCV');
-  if (!downloadButton) return;
+  // Find the Resume link in the sidebar (by href="#resume")
+  const resumeLink = document.querySelector('a[href="#resume"]');
+  if (!resumeLink) {
+    console.warn('CV Download: Resume link not found in sidebar');
+    return;
+  }
 
   // Replace this with your Overleaf read token
   // Get it from your Overleaf project's shareable link
-  const OVERLEAF_READ_TOKEN = 'wfxcvkkpztkk#b57beb';
+  const OVERLEAF_READ_TOKEN = 'wfxcvkkpztkk';
 
   // Check if token is configured
   if (OVERLEAF_READ_TOKEN === 'YOUR_OVERLEAF_READ_TOKEN') {
     console.warn('CV Download: Overleaf read token not configured. Please set OVERLEAF_READ_TOKEN in cv-download.js');
-    downloadButton.disabled = true;
-    downloadButton.title = 'CV download not configured. Please contact the site administrator.';
     return;
   }
 
-  downloadButton.addEventListener('click', async () => {
-    const originalText = downloadButton.innerHTML;
+  resumeLink.addEventListener('click', async (e) => {
+    e.preventDefault(); // Prevent default navigation
+    
+    const originalHTML = resumeLink.innerHTML;
+    const originalTitle = resumeLink.title || '';
     
     // Show loading state
-    downloadButton.disabled = true;
-    downloadButton.innerHTML = '<i class="fas fa-spinner fa-spin" style="margin-right: 0.5rem;"></i>Fetching CV...';
+    resumeLink.style.opacity = '0.6';
+    resumeLink.style.pointerEvents = 'none';
+    resumeLink.title = 'Fetching CV...';
+    
+    // Try to find and update the icon if it exists
+    const icon = resumeLink.querySelector('i');
+    if (icon) {
+      icon.className = 'fas fa-spinner fa-spin';
+    }
 
     try {
       // Import and use compile-overleaf module
@@ -42,30 +54,37 @@ document.addEventListener('DOMContentLoaded', () => {
       const pdfLink = compiled.link.pdf;
 
       // Trigger download
-      const link = document.createElement('a');
-      link.href = pdfLink;
-      link.download = 'Muhammad_Arham_CV.pdf';
-      link.target = '_blank';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      const downloadLink = document.createElement('a');
+      downloadLink.href = pdfLink;
+      downloadLink.download = 'Muhammad_Arham_CV.pdf';
+      downloadLink.target = '_blank';
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
 
-      // Reset button
-      downloadButton.innerHTML = originalText;
-      downloadButton.disabled = false;
+      // Reset link state
+      resumeLink.innerHTML = originalHTML;
+      resumeLink.style.opacity = '1';
+      resumeLink.style.pointerEvents = 'auto';
+      resumeLink.title = originalTitle;
     } catch (error) {
       console.error('Error downloading CV:', error);
       
       // Show error state
-      downloadButton.innerHTML = '<i class="fas fa-exclamation-triangle" style="margin-right: 0.5rem;"></i>Error - Try Again';
-      downloadButton.disabled = false;
+      if (icon) {
+        icon.className = 'fas fa-exclamation-triangle';
+      }
+      resumeLink.title = 'Error downloading CV. Click to try again.';
       
       // Reset after 3 seconds
       setTimeout(() => {
-        downloadButton.innerHTML = originalText;
+        resumeLink.innerHTML = originalHTML;
+        resumeLink.style.opacity = '1';
+        resumeLink.style.pointerEvents = 'auto';
+        resumeLink.title = originalTitle;
       }, 3000);
 
-      // Optional: Show user-friendly error message
+      // Show user-friendly error message
       alert('Failed to download CV. Please try again later or contact me directly.');
     }
   });
