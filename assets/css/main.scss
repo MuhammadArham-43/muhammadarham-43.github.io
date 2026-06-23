@@ -1,16 +1,65 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // Imports your chosen theme skin
 @import "minimal-mistakes"; // Imports the core Minimal Mistakes framework
 
-/* Professional font family */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+/* Typography — fonts loaded via _includes/head/custom.html */
+body,
+input, button, select, textarea,
+table {
+  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+  line-height: 1.7;
 }
 
-/* Hide "Powered by Jekyll & Minimal Mistakes" footer */
-.powered-by,
-.page__footer-follow .powered-by,
-footer .powered-by,
-.page__footer .powered-by {
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.site-title,
+.archive__item-title,
+.author__name,
+.nav__title {
+  font-family: "Space Grotesk", sans-serif !important;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.page__content p,
+.archive__item-excerpt {
+  line-height: 1.75;
+}
+
+.author__name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.author__bio {
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.greedy-nav a,
+.nav__list a {
+  font-family: "Space Grotesk", sans-serif !important;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.btn {
+  font-family: "Space Grotesk", sans-serif !important;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* Hide footer entirely */
+.page__footer {
   display: none !important;
 }
 
@@ -87,6 +136,7 @@ footer .powered-by,
 /* Text spacing and typography */
 .projects-grid .archive__item-body {
   padding-top: 0.75rem;
+  flex: 1;
 }
 
 .projects-grid .archive__item-title {

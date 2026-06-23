@@ -6,7 +6,7 @@ projects:
   
   - image_path: /assets/images/urdu-llama.jpg
     title: "Urdu-Llama (LARGE Initiative)"
-    excerpt: "ow-resource Urdu LLM developed at Traversaal.ai. Recipient of Meta APAC Accelerator Grant (USD 100K)."
+    excerpt: "Low-resource Urdu LLM developed at Traversaal.ai. Recipient of Meta APAC Accelerator Grant (USD 100K)."
     url: "https://arxiv.org/pdf/2510.09051"
 
   - image_path: /assets/images/imaginelogo.png
