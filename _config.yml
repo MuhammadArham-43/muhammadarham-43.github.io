@@ -1,6 +1,6 @@
 title: "Muhammad Arham"
 name: "Muhammad Arham"
-description: "MS @ UAlberta | Reinforcement Learning | Machine Learning Engineer"
+description: "MS @ UAlberta · Google DeepMind"
 url: "https://muhammadarham-43.github.io"
 baseurl: ""
 
@@ -19,7 +19,7 @@ author_profile: true
 author:
   name: "Muhammad Arham"
   avatar: "/assets/images/profile-image.jpg"
-  bio: "MS @ UAlberta · Reinforcement Learning · ML Engineer"
+  bio: "MS @ UAlberta · Google DeepMind"
   links:
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
