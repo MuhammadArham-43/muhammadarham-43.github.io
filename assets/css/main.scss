@@ -226,3 +226,97 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* --- END: Blog external cards --- */
+
+/* --- START: Work Experience Timeline --- */
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin-top: 1.5rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 0.5rem;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #00adb5 0%, rgba(0, 173, 181, 0.08) 100%);
+}
+
+.timeline__item {
+  position: relative;
+  margin-bottom: 2.75rem;
+}
+
+.timeline__item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline__item::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 0.35rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #252a34;
+  border: 2px solid #00adb5;
+  z-index: 1;
+}
+
+.timeline__item--current::before {
+  background: #00adb5;
+  box-shadow: 0 0 0 4px rgba(0, 173, 181, 0.15), 0 0 12px rgba(0, 173, 181, 0.4);
+}
+
+.timeline__date {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #00adb5;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.35rem;
+}
+
+.timeline__badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.1rem 0.45rem;
+  border-radius: 3px;
+  background: rgba(0, 173, 181, 0.12);
+  color: #00adb5;
+  border: 1px solid rgba(0, 173, 181, 0.35);
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.timeline__role {
+  font-family: "Space Grotesk", sans-serif !important;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.2rem;
+  color: #eaeaea;
+}
+
+.timeline__company {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(234, 234, 234, 0.6);
+  margin-bottom: 0.6rem;
+}
+
+.timeline__description {
+  font-size: 0.9rem;
+  color: rgba(234, 234, 234, 0.75);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* --- END: Work Experience Timeline --- */

@@ -1,0 +1,78 @@
+experience:
+  - role: "Research Software Developer"
+    company: "Google DeepMind"
+    location: "Montreal, Canada"
+    start: "May 2026"
+    end: "Present"
+    current: true
+    type: "Contract"
+    # description: "Collaborating with the FAI Incubation team to support external partners on early-stage frontier AI projects."
+
+  - role: "Graduate Research Student"
+    company: "University of Alberta"
+    location: "Edmonton, Canada"
+    start: "Sep 2025"
+    end: "Present"
+    current: true
+    type: "Full-time"
+    
+  - role: "Machine Learning Engineer"
+    company: "ServeDen"
+    location: "Remote, USA"
+    start: "Apr 2025"
+    end: "Dec 2025"
+    current: false
+    type: "Full-time"
+    # description: "Built a no-code LLM agent provisioning platform and modular agentic LLM framework with multi-agent support, MCP integrations, guardrails, and streaming. Implemented end-to-end RAG infrastructure and a graph-based Agent Builder for stateful workflow execution."
+
+  - role: "NLP Researcher"
+    company: "Traversaal.ai"
+    location: "Remote, USA"
+    start: "Sep 2024"
+    end: "Feb 2025"
+    current: false
+    type: "Full-time"
+    # description: "Built a production-grade platform combining RAG pipelines with agentic multi-modal systems. Provided B2B consultancy on RAG systems (>$200K contracts). Core contributor to Urdu-Llama under the LARGE initiative; won the META AI APAC Accelerator Grant (USD 100K)."
+
+  - role: "CERN Summer Student"
+    company: "CERN"
+    location: "Meyrin, Switzerland"
+    start: "Jun 2024"
+    end: "Sep 2024"
+    current: false
+    type: "Internship"
+    # description: "Contributed to the CMSSW project under the Patatrack team for the next phase of HL-LHC. Profiled and optimized heterogeneous CUDA code for event data reconstruction of the TICL project, and ported CPU-only algorithms to CUDA and ROCM using the alpaka framework."
+
+  - role: "Machine Learning Engineer"
+    company: "Vyro"
+    location: "Islamabad, Pakistan"
+    start: "Sep 2022"
+    end: "Apr 2024"
+    current: false
+    type: "Full-time"
+    # description: "Developed and maintained AI products including PhotoTune, ImagineAI, and RemoveIt for millions of users. Optimized Stable Diffusion pipelines achieving 5x inference speedup and 50% GPU reduction. Built custom generation, segmentation, and upscaling pipelines, and a multi-modal RAG system for document QA."
+  
+  - role: "MITACS Intern"
+    company: "University of Manitoba"
+    location: "Winnipeg, Canada"
+    start: "Jun 2023"
+    end: "Sep 2023"
+    current: false
+    type: "Full-time"
+    
+  - role: "Research Assistant"
+    company: "MachVis Research Lab"
+    location: "Islamabad, Pakistan"
+    start: "Jan 2022"
+    end: "Aug 2022"
+    current: false
+    type: "Full-time"
+    
+  - role: "Research Assistant"
+    company: "TUKL Research Lab"
+    location: "Islamabad, Pakistan"
+    start: "Jun 2021"
+    end: "Sep 2021"
+    current: false
+    type: "Full-time"
+    
